@@ -25,9 +25,9 @@ cd -
 
 
 # Initialize RED source
-#repo init -u $ROM_REPO -b $ROM_BRANCH --depth=1;
+repo init -u $ROM_REPO -b $ROM_BRANCH --depth=1;
 
 # Sync RED source
-#repo sync
+repo sync
 
 exit 0;
