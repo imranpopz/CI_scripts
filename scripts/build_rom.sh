@@ -7,5 +7,5 @@ source build/envsetup.sh;
 
 lunch $PRODUCT_NAME-$VARIANT
 
-mka bacon -j$(nproc --all);
+mka $TARGET -j$(nproc --all);
 exit 0;
