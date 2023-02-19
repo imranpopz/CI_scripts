@@ -11,9 +11,9 @@ git config --global color.ui auto
 # Clone GREEN source
 git clone $DEVICE_REPO -b $DEVICE_BRANCH "device/$OEM/$CODENAME";
 cd device/$OEM/$CODENAME;
-mv aosp_sweet.mk $PRODUCT_NAME_$CODENAME.mk;
-sed -i 's/aosp/$PRODUCT_NAME/g' $PRODUCT_NAME_$CODENAME.mk;
-sed -i 's/aosp/$PRODUCT_NAME/g' AndroidProducts.mk;
+mv aosp_sweet.mk $PRODUCTNAME_$CODENAME.mk;
+sed -i 's/aosp/$PRODUCTNAME/g' $PRODUCTNAME_$CODENAME.mk;
+sed -i 's/aosp/$PRODUCTNAME/g' AndroidProducts.mk;
 cd - ;
 ls device/$OEM/$CODENAME
 #git clone $VENDOR_REPO -b $VENDOR_BRANCH "vendor/$OEM/$CODENAME";
