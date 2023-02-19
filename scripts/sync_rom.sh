@@ -16,6 +16,7 @@ sed -i "s/aosp/$PRODUCTNAME/g" ${PRODUCTNAME}_${CODENAME}.mk
 sed -i "s/aosp/$PRODUCTNAME/g" AndroidProducts.mk
 ls
 git diff
+git status
 cd -
 
 #git clone $VENDOR_REPO -b $VENDOR_BRANCH "vendor/$OEM/$CODENAME";
