@@ -11,8 +11,8 @@ git config --global color.ui auto
 # Clone GREEN source
 git clone $DEVICE_REPO -b $DEVICE_BRANCH "device/$OEM/$CODENAME";
 cd device/$OEM/$CODENAME
-mv aosp_sweet.mk ${PRODUCTNAME}_sweet.mk
-sed -i "s/aosp/$PRODUCTNAME/g" $PRODUCTNAME_sweet.mk
+mv aosp_sweet.mk ${PRODUCTNAME}_${CODENAME}.mk
+sed -i "s/aosp/$PRODUCTNAME/g" ${PRODUCTNAME}_${CODENAME}.mk
 sed -i "s/aosp/$PRODUCTNAME/g" AndroidProducts.mk
 ls
 git diff
