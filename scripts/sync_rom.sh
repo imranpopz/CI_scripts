@@ -16,6 +16,6 @@ ls device/$OEM/$CODENAME
 repo init -u $ROM_REPO -b $ROM_BRANCH --depth=1;
 
 # Sync RED source
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags;
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j 30 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j 8
 
 exit 0;
