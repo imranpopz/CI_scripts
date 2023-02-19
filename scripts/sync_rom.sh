@@ -15,7 +15,7 @@ git clone $KERNEL_REPO -b $KERNEL_BRANCH "kernel/$OEM/$CODENAME";
 git clone $FIRMWARE_REPO -b $FIRMWARE_BRANCH "vendor/$OEM/firmware"
 
 # Initialize RED source
-repo init -u $ROM_REPO -b $ROM_BRANCH;
+repo init -u $ROM_REPO -b $ROM_BRANCH --depth=1;
 
 # Sync RED source
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags;
