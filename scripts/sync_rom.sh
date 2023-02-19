@@ -4,6 +4,9 @@ cd ~;
 mkdir tmp;
 cd tmp;
 
+git config --global user.name "imranpopz";
+git config --global user.email "imranpopz32@gmail.com";
+git config --global color.ui auto
 
 # Clone GREEN source
 git clone $DEVICE_REPO -b $DEVICE_BRANCH "device/$OEM/$CODENAME";
