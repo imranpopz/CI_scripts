@@ -15,6 +15,7 @@ mv aosp_sweet.mk ${PRODUCTNAME}_${CODENAME}.mk
 sed -i "s/aosp/$PRODUCTNAME/g" ${PRODUCTNAME}_${CODENAME}.mk
 sed -i "s/aosp/$PRODUCTNAME/g" AndroidProducts.mk
 ls
+cat ${PRODUCTNAME}_${CODENAME}.mk
 git diff
 git status
 cd -
