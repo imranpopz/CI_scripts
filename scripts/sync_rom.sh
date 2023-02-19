@@ -14,8 +14,9 @@ cd device/$OEM/$CODENAME
 mv aosp_sweet.mk $PRODUCTNAME_sweet.mk
 sed -i 's/aosp/$PRODUCTNAME/g' $PRODUCTNAME_sweet.mk
 sed -i 's/aosp/$PRODUCTNAME/g' AndroidProducts.mk
+ls
 cd -
-ls device/$OEM/$CODENAME
+
 #git clone $VENDOR_REPO -b $VENDOR_BRANCH "vendor/$OEM/$CODENAME";
 #git clone $KERNEL_REPO -b $KERNEL_BRANCH "kernel/$OEM/$CODENAME";
 
