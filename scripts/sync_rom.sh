@@ -24,10 +24,10 @@ cd -
 
 
 # Initialize RED source
-repo init -u $ROM_REPO -b $ROM_BRANCH --depth=1 -g default,-device,-mips,-darwin,-notdefault;
+#repo init -u $ROM_REPO -b $ROM_BRANCH --depth=1 -g default,-device,-mips,-darwin,-notdefault;
 
 # Sync RED source
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
+#repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 git clone -b Tiramisu https://github.com/Project-Elixir/hardware_xiaomi.git hardware/xiaomi
 
