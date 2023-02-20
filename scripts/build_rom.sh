@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd ~
-
+ls
 cd tmp/rom
 export ALLOW_MISSING_DEPENDENCIES=true
 source build/envsetup.sh;
