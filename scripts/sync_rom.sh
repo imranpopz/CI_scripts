@@ -3,6 +3,8 @@
 cd ~;
 mkdir tmp;
 cd tmp;
+mkdir rom;
+cd rom;
 
 git config --global user.name "imranpopz";
 git config --global user.email "imranpopz32@gmail.com";
