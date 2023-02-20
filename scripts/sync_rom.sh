@@ -30,4 +30,5 @@ repo init -u $ROM_REPO -b $ROM_BRANCH --depth=1;
 # Sync RED source
 repo sync
 
+git clone -b Tiramisu https://github.com/Project-Elixir/hardware_xiaomi.git hardware/xiaomi
 exit 0;
