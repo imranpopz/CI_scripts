@@ -17,10 +17,6 @@ mv aosp_sweet.mk ${PRODUCTNAME}_${CODENAME}.mk
 sed -i "s/aosp/$PRODUCTNAME/g" ${PRODUCTNAME}_${CODENAME}.mk
 sed -i "s/aosp/$PRODUCTNAME/g" AndroidProducts.mk
 sed -i "s/aosp/$PRODUCTNAME/g" BoardConfig.mk
-ls
-cat ${PRODUCTNAME}_${CODENAME}.mk
-git diff
-git status
 cd -
 
 #git clone $VENDOR_REPO -b $VENDOR_BRANCH "vendor/$OEM/$CODENAME";
